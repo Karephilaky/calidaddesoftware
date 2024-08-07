@@ -1,123 +1,111 @@
-Sistema de Gestión de Tareas
-Descripción
-El Sistema de Gestión de Tareas es una aplicación web diseñada para gestionar tus tareas de manera eficiente. Permite la creación, edición y eliminación de tareas, con opciones para filtrar tareas por estado (completadas o pendientes) y recibir notificaciones por correo electrónico para tareas próximas a vencer.
+# 🗂️ Task Management System
 
-Características
-Registro y autenticación de usuarios: Registro seguro y acceso a cuentas.
-Gestión de tareas: Crea, edita y elimina tareas.
-Filtrado de tareas: Filtra tareas por estado (completadas o pendientes).
-Notificaciones por correo: Recibe alertas para tareas próximas a vencer.
-Interfaz amigable: Diseño intuitivo y atractivo.
-Tecnologías
-Frontend: React, Tailwind CSS
-Backend: Node.js, Express
-Base de Datos: PostgreSQL
-Pruebas: Selenium WebDriver
-Instalación
-Requisitos
-Asegúrate de tener instaladas las siguientes herramientas:
+Welcome to the **Task Management System**! This application helps users manage tasks with features for creating, editing, and deleting tasks. Additionally, it includes a dashboard for task management, notifications for upcoming deadlines, and filtering options.
 
-Node.js
-PostgreSQL
-Clonar el Repositorio
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-cd nombre-del-repositorio
-Configuración del Entorno
-Instalar dependencias del frontend:
+## 📜 Table of Contents
 
-bash
-Copiar código
-cd frontend
-npm install
-Instalar dependencias del backend:
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [API Endpoints](#api-endpoints)
+5. [Testing](#testing)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-bash
-Copiar código
-cd ../backend
-npm install
-Configurar las variables de entorno:
+## 🚀 Features
 
-Crea un archivo .env en la raíz del proyecto y agrega las siguientes variables:
+- **Create, Edit, and Delete Tasks**: Manage your tasks with ease.
+- **Dashboard**: View and manage tasks in a user-friendly interface.
+- **Notifications**: Get notified about tasks nearing their deadlines.
+- **Filtering**: Filter tasks by their completion status (Completed or Pending).
 
-env
-Copiar código
-DB_USER=tu_usuario
-DB_HOST=localhost
-DB_NAME=nombre_de_la_base_de_datos
-DB_PASS=tu_contraseña
-DB_PORT=5432
-PORT=5000
-Iniciar el Proyecto
-Iniciar el servidor backend:
+## 🛠️ Installation
 
-bash
-Copiar código
-cd backend
-npm start
-Iniciar el frontend:
+To get started with this project, follow these steps:
 
-bash
-Copiar código
-cd ../frontend
-npm start
-La aplicación estará disponible en http://localhost:3000.
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/task-management-system.git
+    ```
 
-Uso
-Registro y Login:
+2. **Navigate to the Project Directory**:
+    ```bash
+    cd task-management-system
+    ```
 
-Visita http://localhost:3000/register para crear una cuenta.
-Visita http://localhost:3000/login para iniciar sesión.
-Gestión de Tareas:
+3. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-Una vez autenticado, puedes agregar, editar y eliminar tareas desde el tablero principal.
-Filtrado de Tareas:
+4. **Set Up Environment Variables**:
+    Create a `.env` file in the root directory and add the following variables:
+    ```plaintext
+    DB_USER=your_db_user
+    DB_HOST=your_db_host
+    DB_NAME=your_db_name
+    DB_PASS=your_db_password
+    DB_PORT=your_db_port
+    PORT=5000
+    ```
 
-Utiliza el select box para filtrar tareas completadas o pendientes.
-Notificaciones:
+5. **Start the Application**:
+    ```bash
+    npm start
+    ```
 
-Recibirás correos electrónicos para tareas próximas a vencer según la configuración establecida.
-Contribución
-¡Contribuciones son bienvenidas! Sigue estos pasos para contribuir:
+## 🖥️ Usage
 
-Haz un fork del repositorio.
+Once the application is running, open your browser and go to [http://localhost:5000](http://localhost:5000) to access the application.
 
-Crea una nueva rama:
+- **Dashboard**: Manage tasks and access the task form.
+- **Task Form**: Create and edit tasks.
 
-bash
-Copiar código
-git checkout -b nombre-de-tu-rama
-Realiza tus cambios y haz commit:
+## 🔧 API Endpoints
 
-bash
-Copiar código
-git add .
-git commit -m "Descripción de tus cambios"
-Empuja tus cambios al repositorio remoto:
+### **Tasks**
 
-bash
-Copiar código
-git push origin nombre-de-tu-rama
-Crea un Pull Request en GitHub describiendo tus cambios.
+- **GET /api/tasks**: Retrieve all tasks.
+- **POST /api/tasks**: Create a new task.
+- **PUT /api/tasks/:id**: Update an existing task.
+- **DELETE /api/tasks/:id**: Delete a task.
 
-Pruebas
-Las pruebas se realizan utilizando Selenium WebDriver. Para ejecutarlas:
+## 🧪 Testing
 
-Instalar dependencias de Selenium:
+To test the application, use Selenium WebDriver. Make sure your application is running at [http://localhost:5000](http://localhost:5000).
 
-bash
-Copiar código
-cd tests
-npm install
-Ejecutar las pruebas:
+1. **Navigate to the Selenium tests directory**.
+2. **Run the tests**:
+    ```bash
+    pytest
+    ```
 
-bash
-Copiar código
-npm test
-Las pruebas verifican la funcionalidad del sistema, incluyendo la gestión de tareas y las notificaciones por correo.
+## 🤝 Contributing
 
-Documentación
-Toda la documentación relevante, incluyendo la especificación de requisitos IEEE 830 y la metodología de desarrollo, se encuentra en el directorio docs.
+We welcome contributions! To contribute to this project:
 
-Licencia
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+1. **Fork the Repository**.
+2. **Create a Branch**:
+    ```bash
+    git checkout -b feature/new-feature
+    ```
+3. **Make Your Changes**.
+4. **Commit Your Changes**:
+    ```bash
+    git commit -am 'Add new feature'
+    ```
+5. **Push to the Branch**:
+    ```bash
+    git push origin feature/new-feature
+    ```
+6. **Create a Pull Request**.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy Task Managing! 🎉
+
 
