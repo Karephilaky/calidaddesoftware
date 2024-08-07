@@ -108,4 +108,114 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Happy Task Managing! 🎉
 
+# 🗂️ Sistema de Gestión de Tareas
+
+¡Bienvenido al **Sistema de Gestión de Tareas**! Esta aplicación permite a los usuarios gestionar tareas con características para crear, editar y eliminar tareas. Además, incluye un panel de control para la gestión de tareas, notificaciones para fechas límite próximas y opciones de filtrado.
+
+## 📜 Tabla de Contenidos
+
+1. [Características](#características)
+2. [Instalación](#instalación)
+3. [Uso](#uso)
+4. [Endpoints de la API](#endpoints-de-la-api)
+5. [Pruebas](#pruebas)
+6. [Contribuciones](#contribuciones)
+7. [Licencia](#licencia)
+
+## 🚀 Características
+
+- **Crear, Editar y Eliminar Tareas**: Gestiona tus tareas con facilidad.
+- **Panel de Control**: Visualiza y gestiona tareas en una interfaz amigable.
+- **Notificaciones**: Recibe notificaciones sobre tareas próximas a su fecha límite.
+- **Filtrado**: Filtra tareas por su estado de finalización (Completadas o Pendientes).
+
+## 🛠️ Instalación
+
+Para comenzar con este proyecto, sigue estos pasos:
+
+1. **Clonar el Repositorio**:
+    ```bash
+    git clone https://github.com/tuusuario/sistema-gestion-tareas.git
+    ```
+
+2. **Navegar al Directorio del Proyecto**:
+    ```bash
+    cd sistema-gestion-tareas
+    ```
+
+3. **Instalar Dependencias**:
+    ```bash
+    npm install
+    ```
+
+4. **Configurar Variables de Entorno**:
+    Crea un archivo `.env` en el directorio raíz y añade las siguientes variables:
+    ```plaintext
+    DB_USER=tu_usuario_db
+    DB_HOST=tu_host_db
+    DB_NAME=tu_nombre_db
+    DB_PASS=tu_contraseña_db
+    DB_PORT=tu_puerto_db
+    PORT=5000
+    ```
+
+5. **Iniciar la Aplicación**:
+    ```bash
+    npm start
+    ```
+
+## 🖥️ Uso
+
+Una vez que la aplicación esté en funcionamiento, abre tu navegador y dirígete a [http://localhost:5000](http://localhost:5000) para acceder a la aplicación.
+
+- **Panel de Control**: Gestiona tareas y accede al formulario de tareas.
+- **Formulario de Tareas**: Crea y edita tareas.
+
+## 🔧 Endpoints de la API
+
+### **Tareas**
+
+- **GET /api/tasks**: Recuperar todas las tareas.
+- **POST /api/tasks**: Crear una nueva tarea.
+- **PUT /api/tasks/:id**: Actualizar una tarea existente.
+- **DELETE /api/tasks/:id**: Eliminar una tarea.
+
+## 🧪 Pruebas
+
+Para probar la aplicación, usa Selenium WebDriver. Asegúrate de que tu aplicación esté ejecutándose en [http://localhost:5000](http://localhost:5000).
+
+1. **Navega al directorio de pruebas de Selenium**.
+2. **Ejecuta las pruebas**:
+    ```bash
+    pytest
+    ```
+
+## 🤝 Contribuciones
+
+¡Bienvenidas las contribuciones! Para contribuir a este proyecto:
+
+1. **Haz un Fork del Repositorio**.
+2. **Crea una Rama**:
+    ```bash
+    git checkout -b feature/nueva-caracteristica
+    ```
+3. **Realiza tus Cambios**.
+4. **Haz Commit de tus Cambios**:
+    ```bash
+    git commit -am 'Añadir nueva característica'
+    ```
+5. **Haz Push a la Rama**:
+    ```bash
+    git push origin feature/nueva-caracteristica
+    ```
+6. **Crea un Pull Request**.
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+¡Feliz gestión de tareas! 🎉
+
 
